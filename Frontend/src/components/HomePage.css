@@ -1,0 +1,178 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4e2; Creamy greenish background */
+    /* color: #333;
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url('../../Assets/Background1.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(41, 100%, 94%);
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align title to the left */
+    padding: 20px;
+}
+.site-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #20cdc4; /* Updated color */
+    margin: 0;
+    position: absolute; /* Position it absolutely */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff; /* White background for the form container */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #34495e;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fdfdfd; /* Light background for inputs */
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.textarea {
+    resize: none;
+    height: 150px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 180px;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ff009d; /* Button color */
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.button:disabled {
+    background-color: #a6c1ff;
+    cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+    background-color: #0056b3;
+    box-shadow: 0px 15px 20px rgba(0, 86, 179, 0.4);
+    transform: translateY(-7px);
+}
+
+.loading-bar {
+    margin-top: 20px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.loading-bar-inner {
+    width: 0;
+    height: 10px;
+    background-color: #007bff;
+    animation: loading 3s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.download-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #28a745; /* Green color for download button */
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #218838;
+}
